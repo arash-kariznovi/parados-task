@@ -38,7 +38,7 @@ const FileUpload = () => {
 
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/file',
+          'https://parados-task-api-production.up.railway.app/api/file',
           formData,
           {
             onUploadProgress: (progressEvent) => {

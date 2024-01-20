@@ -6,7 +6,7 @@ const FileShow = () => {
   useEffect(() => {
     const filesHandler = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/file')
+        const response = await fetch('https://parados-task-api-production.up.railway.app/api/file')
         if (!response.ok) {
           throw new Error('Failed to fetch files')
         }

@@ -8,7 +8,7 @@ const TextInput = () => {
   const textHandler = async () => {
     console.log(text)
     try {
-      await fetch('http://localhost:5000/api/text', {
+      await fetch('https://parados-task-api-production.up.railway.app/api/text', {
         headers: {
           'Content-Type': 'application/json',
         },
